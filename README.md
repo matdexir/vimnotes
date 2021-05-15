@@ -32,40 +32,8 @@ Don't use your arrow keys!
 
 `I`, `A`: Enter insert mode at first character on a line, enter insert mode at last character in the current line  
 
-
-## Your first VimRC: How to setup your vim's vimrc
-https://www.youtube.com/watch?v=n9k9scbTuvQ
-
-Source or "execute" everything in a file with `source %`.  
-This applies changes made to .vimrc.  
-
-Make sure to create the undodir at `~/.vim/undodir`  
-
-Run the following command to install the plug vim plugin manager
-```console
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
-    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-```
-
-Open up the .vimrc and add in your plugins.
-Then source the .vim with `:source %s`.
-Then install plugins with `:PlugInstall`.
-
-Make YCM work:
-```console
-$ cd ~/.vim/plugged/YouCompleteMe
-$ python3 install.py
-```
-
 Add some nice remap to make things easier:
-* `<leader>h`: Move to window on the left
-* `<leader>l`: Move to window on the right
-* `<leader>j`: Move to window on the bottom
-* `<leader>k`: Move to window on the top
-
-* `<leader>u`: Show undo tree
-
-* `<leader>pv`: Open up file tree
+* `F5`: Show undo tree
 
 * `<leader>ps`: (Project Search) searches for stuff using ripgrep (Make sure to install ripgrep on your system)
 
@@ -90,7 +58,8 @@ vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 ```
 
-## Using Vim: Vim + Git - Fugitive
+
+## Using Vim: Vim + Git - Fugitive (Haven't tried it yet looks interesting)
 https://www.youtube.com/watch?v=PO6DxfGPQvw
 
 `<leader>gs`: Git Status  
@@ -111,14 +80,6 @@ The window on the left should be the current branch, the window on the right sho
 `<leader>gj`: Grab from the window on the right (Use 'gh' if using dvorak)  
 
 `Ctrl-w` and `ctrl-O`: save and close  
-
-## Making Vim Amazing - Why use Vim and the .vimrc
-https://www.youtube.com/watch?v=Iid1Ms14Om4
-
-Why Vim?
-* Fast: Doesn't take forever to load files
-* Autocomplete
-* Able to jump to definitions fast
 
 ## Vimium: Intro to using keyboard in your browser
 https://www.youtube.com/watch?v=cA2aUFsSLac
@@ -144,27 +105,16 @@ https://www.youtube.com/watch?v=-I1b8BINyEw
 * COC: For autocomplete
 * Fzf: File finding
 
-Colorscheme:
+gzf remap to make searching for files easier:
 ```
-colorscheme gruvbox
-```
-
-Nice remaps for coc and jumping to definition/references:
-```
-nmap <leader>gd <Plug>(coc-definition)
-nmap <leader>gr <Plug>(coc-references)
-```
-
-Fzf remap to make searching for files easier:
-```
-nnoremap <C-p> :GFiles<CR> 
+nnoremap <C-p> :Files<CR> 
 ```
 
 ### Commands Used 
 
-`Ctrl-p`: Remap for :GFiles. Use it to search for a file. Works even for searching large codebases.  
+`Ctrl-p`: Remap for :Files. Use it to search for a file. Works even for searching large codebases.  
 
-`<leader>gd`: Jump to definition  
+`gd`(normal mode): Jump to definition  
 
 `Ctrl-^`: Jumps to the last file you were in
 
@@ -172,7 +122,7 @@ nnoremap <C-p> :GFiles<CR>
 
 `Ctrl-i`: Go forward position (Opposite of Ctrl-o)
 
-## VIM: Coolest Vim Command
+## VIM: Coolest Vim Command (Gotta look into that as well)
 https://www.youtube.com/watch?v=E7NBhSsZouc
 
 Let's say you have a line of code:
