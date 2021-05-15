@@ -2,7 +2,7 @@
 [The Primeagen](https://www.youtube.com/playlist?list=PLm323Lc7iSW9kRCuzB3J_h7vPjIDedplM)
 
 Notes written in (neo)vim
-
+ 
 ## Vim Movements P1 - Your First Moves 
 https://www.youtube.com/watch?v=nnhqVDIx-go
 
