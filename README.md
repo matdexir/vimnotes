@@ -180,3 +180,9 @@ https://www.youtube.com/watch?v=CN8p9iL7PPI
 `:help g`: A bunch more g commands
 
 `help :g`: All the fun searching g commands
+
+
+## Spell checking in vim
+`:set spell!`: highlights all the poorly spelled word in the current buffer
+`]s`: to move to the next spelling mistake
+`z=`: gives spelling suggestions for the current word under the cursor
